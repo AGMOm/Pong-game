@@ -54,7 +54,7 @@ class GameScene: SKScene {
     
     func getIMUData() {
         if motion.isDeviceMotionAvailable {
-            self.motion.deviceMotionUpdateInterval = 1.0 / 60.0
+            self.motion.deviceMotionUpdateInterval = 1.0
             self.motion.showsDeviceMovementDisplay = true
             self.motion.startDeviceMotionUpdates(using: .xArbitraryZVertical, to: .main, withHandler: { (data, error) in
              if let validData = data {
@@ -218,7 +218,7 @@ class GameScene: SKScene {
                 enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
                 break
             case 13:
-                enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
+                enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.2))
                 break
             case 20:
                 break

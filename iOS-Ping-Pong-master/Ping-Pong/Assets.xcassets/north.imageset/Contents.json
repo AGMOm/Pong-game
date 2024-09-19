@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "1-north-korea-south-pyongyang-everett.jpg",
+      "filename" : "north.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "1-north-korea-south-pyongyang-everett 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "1-north-korea-south-pyongyang-everett 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,42 +32,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-QH-veQ">
-                                <rect key="frame" x="162.5" y="310" width="89" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1" horizontalCompressionResistancePriority="762" image="1-north-korea-south-pyongyang-everett" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-Gm-ejQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-QH-veQ">
+                                <rect key="frame" x="162" y="310" width="90" height="26"/>
                                 <color key="backgroundColor" red="0.30350759630000002" green="0.44380936030000001" blue="0.53799444439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="r66-4i-XyF"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="1 Player Easy"/>
+                                <state key="normal" title="Easy"/>
                                 <connections>
                                     <action selector="easy:" destination="Y2F-8o-uxx" eventType="touchUpInside" id="3xR-2P-Du9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-1e-r4C">
-                                <rect key="frame" x="151" y="360" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-1e-r4C">
+                                <rect key="frame" x="160" y="356" width="94" height="29"/>
                                 <color key="backgroundColor" red="0.30350759630000002" green="0.44380936030000001" blue="0.53799444439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="SkP-Tk-Xh1"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="1 Player Medium"/>
+                                <state key="normal" title=" Medium"/>
                                 <connections>
                                     <action selector="medium:" destination="Y2F-8o-uxx" eventType="touchUpInside" id="qSq-Oa-zFs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-ei-sIm">
-                                <rect key="frame" x="162" y="410" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-ei-sIm">
+                                <rect key="frame" x="164" y="405" width="86" height="30"/>
                                 <color key="backgroundColor" red="0.30350759630000002" green="0.44380936030000001" blue="0.53799444439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="1 Player Hard"/>
+                                <state key="normal" title=" Hard"/>
                                 <connections>
                                     <action selector="hard:" destination="Y2F-8o-uxx" eventType="touchUpInside" id="NDc-6l-wbI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2S-C5-yEB">
+                                <rect key="frame" x="44" y="48" width="326" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pyongyang Pying pong ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="28"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nZ3-BU-nZZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bxe-1e-r4C" firstAttribute="top" secondItem="CWk-QH-veQ" secondAttribute="bottom" constant="20" id="5UK-pE-MAi"/>
+                            <constraint firstAttribute="bottom" secondItem="gR0-Gm-ejQ" secondAttribute="bottom" id="9QP-50-H19"/>
+                            <constraint firstItem="CWk-QH-veQ" firstAttribute="leading" secondItem="nZ3-BU-nZZ" secondAttribute="leading" constant="162" id="Aez-Rm-tUx"/>
                             <constraint firstItem="Bxe-1e-r4C" firstAttribute="centerX" secondItem="nZ3-BU-nZZ" secondAttribute="centerX" id="PAj-o1-9q1"/>
+                            <constraint firstItem="gR0-Gm-ejQ" firstAttribute="leading" secondItem="nZ3-BU-nZZ" secondAttribute="leading" id="XGO-e0-s59"/>
+                            <constraint firstItem="gR0-Gm-ejQ" firstAttribute="trailing" secondItem="nZ3-BU-nZZ" secondAttribute="trailing" id="a0e-Gs-CxZ"/>
                             <constraint firstItem="CWk-QH-veQ" firstAttribute="centerX" secondItem="nZ3-BU-nZZ" secondAttribute="centerX" id="ctK-q5-kVa"/>
+                            <constraint firstItem="gR0-Gm-ejQ" firstAttribute="top" secondItem="WYd-tO-QSx" secondAttribute="top" id="gwh-UD-wgW"/>
+                            <constraint firstItem="CWk-QH-veQ" firstAttribute="top" secondItem="nZ3-BU-nZZ" secondAttribute="top" constant="262" id="oFv-3a-gTp"/>
                             <constraint firstItem="sXe-ei-sIm" firstAttribute="centerX" secondItem="nZ3-BU-nZZ" secondAttribute="centerX" id="qrK-rE-lrF"/>
+                            <constraint firstItem="sXe-ei-sIm" firstAttribute="leading" secondItem="nZ3-BU-nZZ" secondAttribute="leading" constant="164" id="sZk-yr-Ga3"/>
                             <constraint firstItem="sXe-ei-sIm" firstAttribute="top" secondItem="Bxe-1e-r4C" secondAttribute="bottom" constant="20" id="u2Q-q4-AVd"/>
+                            <constraint firstItem="Bxe-1e-r4C" firstAttribute="leading" secondItem="nZ3-BU-nZZ" secondAttribute="leading" constant="160" id="ypB-bh-SV8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JOa-S2-BGJ"/>
@@ -122,10 +154,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <exit id="PSk-cl-5QD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="801" y="25"/>
+            <point key="canvasLocation" x="800.00000000000011" y="24.776785714285712"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1-north-korea-south-pyongyang-everett" width="592" height="900"/>
         <image name="close" width="144" height="144"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
